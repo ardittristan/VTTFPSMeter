@@ -1,0 +1,12 @@
+.fpsCounter {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 40;
+    left: auto;
+    background: url(/ui/denim075.png);
+    border-radius: 5px;
+    box-shadow: 0 0 20px #000;
+    margin: 6px 0;
+    border: 1px solid #000;
+}
