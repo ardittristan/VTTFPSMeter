@@ -1,3 +1,5 @@
+![GitHub All Releases](https://img.shields.io/github/downloads/ardittristan/VTTFPSMeter/total)
+
 # VTT FPS Meter
 
 Shows fps at the top right of the screen.
