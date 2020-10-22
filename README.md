@@ -1,4 +1,5 @@
-![GitHub All Releases](https://img.shields.io/badge/dynamic/json?color=green&label=downloads&query=*&url=http%3A%2F%2Faws.ardittristan.xyz%3A9756%2FdownloadCount%2FVTTFPSMeter)
+![GitHub All Releases](https://img.shields.io/github/downloads/ardittristan/VTTFPSMeter/total)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-Green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TF3LJHWV9U7HN)
 
 # VTT FPS Meter
 

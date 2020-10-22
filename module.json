@@ -2,7 +2,7 @@
 	"name": "fpsmeter",
 	"title": "FPS Meter",
 	"description": "Shows FPS",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "ardittristan#0001",
 	"esmodules": ["fpsmeter.js"],
 	"styles": [
@@ -13,5 +13,5 @@
     "manifest": "https://raw.githubusercontent.com/ardittristan/VTTFPSMeter/master/module.json",
     "download": "https://github.com/ardittristan/VTTFPSMeter/releases/latest/download/fpsmeter.zip",
 	"minimumCoreVersion": "0.5.5",
-	"compatibleCoreVersion": "0.7.0"
+	"compatibleCoreVersion": "0.7.5"
 }
