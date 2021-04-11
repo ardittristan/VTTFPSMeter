@@ -1,0 +1,29 @@
+<form autocomplete="off" onsubmit="event.preventDefault()">
+  <div>
+    <label for="default">Use default location</label>
+    <input type="checkbox" name="default" id="default" {{checked default}} />
+    <div class="number-container">
+      <div>
+        <label for="top">top</label>
+        <input name="top" id="top" value="{{top}}" />
+      </div>
+      <div>
+        <label for="right">right</label>
+        <input name="right" id="right" value="{{right}}" />
+      </div>
+      <div>
+        <label for="bottom">bottom</label>
+        <input name="bottom" id="bottom" value="{{bottom}}" />
+      </div>
+      <div>
+        <label for="left">left</label>
+        <input name="left" id="left" value="{{left}}" />
+      </div>
+    </div>
+  </div>
+  <p>eg <code>10px</code> or <code>auto</code></p>
+  <div class="button-container">
+    <button type="submit">Apply</button>
+    <button id="cancelButton" type="button">Cancel</button>
+  </div>
+</form>

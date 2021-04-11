@@ -1,12 +1,48 @@
+:root {
+  --fpsLeft: auto;
+  --fpsRight: unset;
+  --fpsBottom: unset;
+  --fpsTop: 6px;
+}
+
 .fpsCounter {
-    width: 2rem;
-    height: 2rem;
-    position: fixed;
-    z-index: 40;
-    left: auto;
-    background: url(/ui/denim075.png);
-    border-radius: 5px;
-    box-shadow: 0 0 20px #000;
-    margin: 6px 0;
-    border: 1px solid #000;
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  z-index: 40;
+  left: var(--fpsLeft);
+  top: var(--fpsTop);
+  bottom: var(--fpsBottom);
+  background: url(/ui/denim075.png);
+  border-radius: 5px;
+  box-shadow: 0 0 20px #000;
+  margin: 6px 0;
+  border: 1px solid #000;
+}
+
+#fps-settings .button-container {
+  display: flex;
+}
+
+#fps-settings .number-container {
+  border: thin black solid;
+  padding: 2px;
+  margin: 0 -2px;
+  display: grid;
+  grid-template-areas:
+    ". ."
+    ". .";
+}
+
+#fps-settings .number-container > div {
+  text-align: center;
+}
+
+#fps-settings .number-container > div input {
+  width: 6em;
+}
+
+#fps-settings .number-container > div label:after {
+  content: "\A";
+  white-space: pre;
 }
