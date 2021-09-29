@@ -8,11 +8,18 @@ let updateFPSInterval;
 
 // register setting
 Hooks.once("init", () => {
+  game.settings.register("fpsmeter", "showFpsDefault", {
+    name: "Show fps by default?",
+    scope: "world",
+    config: true,
+    default: true,
+    type: Boolean,
+  });
   game.settings.register("fpsmeter", "showFps", {
     name: "Show fps?",
     scope: "client",
     config: true,
-    default: true,
+    default: game.settings.get("fpsmeter", "showFpsDefault"),
     type: Boolean,
   });
   showFps = game.settings.get("fpsmeter", "showFps");
@@ -104,10 +111,11 @@ Hooks.on("closeSettingsConfig", () => {
 Hooks.once("canvasReady", () => {
   // on every frame
   canvas.app.ticker.add(() => counter++);
-  setIntervals();
 
   // add fps box
   jQuery(document.body).prepend('<div class="fpsCounter"><canvas class="fpsCanvas" id="fpsCanvas" width="1" height="1"></canvas></div>');
+
+  setIntervals();
 
   // hide if disabled
   if (!showFps) {

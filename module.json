@@ -2,7 +2,7 @@
 	"name": "fpsmeter",
 	"title": "FPS Meter",
 	"description": "Shows FPS",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"author": "ardittristan#0001",
 	"esmodules": ["fpsmeter.js"],
 	"styles": [
